@@ -15,7 +15,7 @@ namespace DeliveryApp.Views
         public OrdersHistoryView()
         {
             InitializeComponent();
-            LabelName.Text = "historique des achats de " + Preferences.Get("Username", "Invité")+",";
+            LabelName.Text = "Order history of " + Preferences.Get("Username", "Guest") + ",";
         }
 
         private async void ImageButton_Clicked(object sender, EventArgs e)

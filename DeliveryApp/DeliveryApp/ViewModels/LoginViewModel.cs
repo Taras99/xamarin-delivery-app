@@ -88,10 +88,10 @@ namespace DeliveryApp.ViewModels
 
                 if (Result)
                 {
-                   await Application.Current.MainPage.DisplayAlert("Succès", "Utilisateur enregister", "OK");
+                   await Application.Current.MainPage.DisplayAlert("Success", "User registered", "OK");
                 } else
                 {
-                    await Application.Current.MainPage.DisplayAlert("Error", "Il existe déja un utilisateur avec ce nom", "OK");
+                    await Application.Current.MainPage.DisplayAlert("Error", "A user with this name already exists", "OK");
                 }
             }catch(Exception ex)
             {

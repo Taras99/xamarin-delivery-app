@@ -55,7 +55,7 @@ namespace DeliveryApp.ViewModels
             var uname = Preferences.Get("Username", String.Empty);
             if (string.IsNullOrEmpty(uname))
             {
-                Username = "Invité";
+                Username = "Guest";
             }
             else { Username = uname; }
 
@@ -77,7 +77,7 @@ namespace DeliveryApp.ViewModels
         {
             if (SearchText == null)
             { 
-                await Application.Current.MainPage.DisplayAlert("erreur", "la barre de recherche ne peut-être vide", "ok");
+                await Application.Current.MainPage.DisplayAlert("Error", "Search bar cannot be empty", "OK");
             }
             else 
             {

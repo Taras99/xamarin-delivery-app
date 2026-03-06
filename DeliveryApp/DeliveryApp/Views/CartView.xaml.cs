@@ -15,7 +15,7 @@ namespace DeliveryApp.Views
         public CartView()
         {
             InitializeComponent();
-            LabelName.Text = "Welcome" + Preferences.Get("Username", "Invité") + ",";
+            LabelName.Text = "Welcome " + Preferences.Get("Username", "Guest") + ",";
         }
 
         private void ImageButton_Clicked(object sender, EventArgs e)

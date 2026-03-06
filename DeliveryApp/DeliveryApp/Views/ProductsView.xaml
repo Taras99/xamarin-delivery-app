@@ -58,7 +58,7 @@
                     <RowDefinition Height="Auto" />
                     <RowDefinition Height="Auto" /> 
                 </Grid.RowDefinitions>
-                <Label Text="Bon arrivé" Grid.Row="0" Grid.Column="0"   Style="{StaticResource SecondaryLabel}"  />
+                <Label Text="Welcome back" Grid.Row="0" Grid.Column="0"   Style="{StaticResource SecondaryLabel}"  />
                 <Label Text="{Binding Username}" Grid.Row="1" Grid.Column="0" FontSize="20" FontAttributes="Bold"   Style="{StaticResource PrimaryLabel}" />
 
                 <ImageButton Grid.Row="0" Grid.Column="1" Grid.RowSpan="2" BackgroundColor="Transparent"

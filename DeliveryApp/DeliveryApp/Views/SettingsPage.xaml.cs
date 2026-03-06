@@ -33,9 +33,9 @@ namespace DeliveryApp.Views
         {
             var cct = new CreateCartTable();
             if (cct.CreateTable())
-                DisplayAlert("Operation Reussie", "table de carte créer", "Ok");
+                DisplayAlert("Success", "Cart table created", "Ok");
             else
-                DisplayAlert("Error", "erreur lors de la creation de la table", "Ok");
+                DisplayAlert("Error", "Error creating the cart table", "Ok");
         }
 
        
