@@ -27,6 +27,7 @@ namespace DeliveryApp.Droid
             string documentPath = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
             string path = Path.Combine(documentPath, sqliteFileName);
             var cn = new SQLiteConnection(path);
+            cn.CreateTable<CartItem>();
             return cn;
         }
     }

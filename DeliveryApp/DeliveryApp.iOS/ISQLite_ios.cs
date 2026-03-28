@@ -23,7 +23,8 @@ namespace DeliveryApp.iOS
             string documentPath = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
             string libraryPath = Path.Combine(documentPath, "..", "Library");
             string path = Path.Combine(libraryPath, sqliteFileName);
-            var cn = new  SQLiteConnection(path);
+            var cn = new SQLiteConnection(path);
+            cn.CreateTable<CartItem>();
             return cn;
         }
     }

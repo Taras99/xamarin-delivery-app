@@ -16,7 +16,7 @@ namespace DeliveryApp.Services
         FirebaseClient client;
         public FoodItemService()
         {
-            client = new FirebaseClient("https://fooddeliveryapp-ecdeb-default-rtdb.firebaseio.com/");
+            client = new FirebaseClient("https://fooddeliveryapp-ecdeb-default-rtdb.europe-west1.firebasedatabase.app/");
 
         }
 

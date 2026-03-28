@@ -14,7 +14,7 @@ namespace DeliveryApp.Services
         FirebaseClient client;
         public CategoryDataService()
         {
-            client = new FirebaseClient("https://fooddeliveryapp-ecdeb-default-rtdb.firebaseio.com/");
+            client = new FirebaseClient("https://fooddeliveryapp-ecdeb-default-rtdb.europe-west1.firebasedatabase.app/");
         }
 
         public async Task<List<Category>> GetCategoriesAsync()

@@ -16,7 +16,7 @@ namespace DeliveryApp.Helpers
         public List<Category> Categories { get; set;}
         public AddCategoryData()
         {
-            client = new FirebaseClient("https://fooddeliveryapp-ecdeb-default-rtdb.firebaseio.com/");
+            client = new FirebaseClient("https://fooddeliveryapp-ecdeb-default-rtdb.europe-west1.firebasedatabase.app/");
             Categories = new List<Category>()
             {
                 new Category(){
